@@ -1,32 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-index1',
-  templateUrl: './index1.component.html',
-  styleUrls: ['./index1.component.scss']
+  selector: "app-index1",
+  templateUrl: "./index1.component.html",
+  styleUrls: ["./index1.component.scss"],
 })
 
 /**
  * Index-1 component
  */
 export class Index1Component implements OnInit {
+  currentSection = "home";
 
-  currentSection = 'home';
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   /**
    * Window scroll method
    */
   windowScroll() {
-    const navbar = document.getElementById('navbar');
-    if (document.body.scrollTop >= 50 || document.documentElement.scrollTop > 50) {
-      navbar.classList.add('nav-sticky');
+    const navbar = document.getElementById("navbar");
+    if (
+      document.body.scrollTop >= 50 ||
+      document.documentElement.scrollTop > 50
+    ) {
+      navbar.classList.add("nav-sticky");
     } else {
-      navbar.classList.remove('nav-sticky');
+      navbar.classList.remove("nav-sticky");
     }
   }
 
@@ -42,6 +43,6 @@ export class Index1Component implements OnInit {
    * Toggle navbar
    */
   toggleMenu() {
-    document.getElementById('navbarCollapse').classList.toggle('show');
+    document.getElementById("navbarCollapse").classList.toggle("show");
   }
 }
