@@ -1,3 +1,5 @@
+import { TranslateService } from "@ngx-translate/core";
+import { DashLangService } from "./../../services/dash-lang.service";
 import { Component, OnInit } from "@angular/core";
 
 @Component({
@@ -10,10 +12,35 @@ import { Component, OnInit } from "@angular/core";
  */
 export class Index5Component implements OnInit {
   currentSection = "home";
+  languages = [];
+  fullNameLang;
+  selected = "";
 
-  constructor() {}
+  constructor(
+    private langService: DashLangService,
+    private translatetor: TranslateService
+  ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.languages = this.langService.getLanguages();
+    this.selected = this.langService.langSelected;
+
+    if (this.selected == "" || this.selected == "en") {
+      this.selected = "en";
+      this.fullNameLang = "English";
+    } else this.fullNameLang = "Français";
+  }
+
+  changeLanguage(elt) {
+    this.langService.setLanguage(elt.value);
+
+    this.selected = this.langService.langSelected;
+
+    if (this.selected == "en") {
+      this.selected = "en";
+      this.fullNameLang = "English";
+    } else this.fullNameLang = "Français";
+  }
 
   /**
    * Window scroll method

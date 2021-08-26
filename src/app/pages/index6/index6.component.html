@@ -17,13 +17,13 @@
         src="assets/images/logo-dash.png"
         class="logo-light"
         alt=""
-        height="20"
+        height="32"
       />
       <img
         src="assets/images/logo-dash.png"
         alt=""
         class="logo-dark"
-        height="20"
+        height="32"
       />
     </a>
 
@@ -46,7 +46,7 @@
             [ngxScrollTo]="'#home'"
             href="javascript: void(0);"
             class="nav-link"
-            >Home</a
+            >{{ "MENU.home" | translate }}</a
           >
         </li>
         <li
@@ -68,34 +68,12 @@
             [ngxScrollTo]="'#features'"
             href="javascript: void(0);"
             class="nav-link"
-            >Features</a
-          >
-        </li>
-        <li
-          class="nav-item"
-          [ngClass]="{ active: currentSection === 'clients' }"
-        >
-          <a
-            [ngxScrollTo]="'#clients'"
-            href="javascript: void(0);"
-            class="nav-link"
-            >Clients</a
-          >
-        </li>
-        <li
-          class="nav-item"
-          [ngClass]="{ active: currentSection === 'clients' }"
-        >
-          <a
-            [ngxScrollTo]="'#clients'"
-            href="javascript: void(0);"
-            class="nav-link"
-            >Clients</a
+            >{{ "MENU.features" | translate }}</a
           >
         </li>
         <li ngbDropdown class="nav-item">
           <div class="dropdown-language" id="dropdownBasic1" ngbDropdownToggle>
-            English
+            {{ "MENU.langEn" | translate }}
           </div>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <button ngbDropdownItem>French</button>
@@ -106,7 +84,7 @@
         href="https://partner.mydashs.com"
         class="btn btn-success btn-rounded navbar-btn"
       >
-        Become a partner
+        {{ "MENU.partner" | translate }}
       </a>
     </div>
   </div>

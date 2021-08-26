@@ -17,6 +17,7 @@ import { Index6Component } from "./index6/index6.component";
 // NgBootstrap
 import { NgbModalModule } from "@ng-bootstrap/ng-bootstrap";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { TranslateModule } from "@ngx-translate/core";
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
     NgbModalModule,
     NgxYoutubePlayerModule,
     NgbModule,
+    TranslateModule,
   ],
 })
 export class PagesModule {}

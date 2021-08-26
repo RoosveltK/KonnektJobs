@@ -1,0 +1,16 @@
+{
+  "MENU": {
+    "home": "Acceuil",
+    "features": "Produits",
+    "langEn": "Anglais",
+    "langFr": "Français",
+    "partner": "Devenir partenaire"
+  },
+  "HOME": {
+    "discover": "Adopter MyDash dès aujourd'hui ",
+    "promotMessage": "La bonne addresse pour les promotions tout les jours",
+    "promotMessage1": "Vous gerez les promotions dans les agences de vos entreprises facilement",
+    "start": "Commencer",
+    "learn": "Apprendre encore plus"
+  }
+}

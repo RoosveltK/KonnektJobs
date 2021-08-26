@@ -17,13 +17,13 @@
         src="assets/images/logo-dash-big.png"
         class="logo-light"
         alt=""
-        height="20"
+        height="32"
       />
       <img
         src="assets/images/logo-dash-big.png"
         alt=""
         class="logo-dark"
-        height="20"
+        height="32"
       />
     </a>
 
@@ -46,7 +46,7 @@
             [ngxScrollTo]="'#home'"
             href="javascript: void(0);"
             class="nav-link"
-            >Home</a
+            >{{ "MENU.home" | translate }}</a
           >
         </li>
         <li
@@ -68,7 +68,7 @@
             [ngxScrollTo]="'#features'"
             href="javascript: void(0);"
             class="nav-link"
-            >Features</a
+            >{{ "MENU.features" | translate }}</a
           >
         </li>
         <li
@@ -82,12 +82,23 @@
             >Clients</a
           >
         </li>
-        <li ngbDropdown class="nav-item">
+        <li ngbDropdown style="cursor: pointer" class="nav-item">
           <div class="dropdown-language" id="dropdownBasic1" ngbDropdownToggle>
-            English
+            {{ fullNameLang }}
           </div>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button ngbDropdownItem>French</button>
+            <button
+              *ngFor="let lang of languages"
+              (click)="changeLanguage(lang)"
+              ngbDropdownItem
+            >
+              <span *ngIf="lang.value !== selected && selected == 'en'"
+                >French</span
+              >
+              <span *ngIf="lang.value !== selected && selected == 'fr'"
+                >Anglais</span
+              >
+            </button>
           </div>
         </li>
       </ul>
@@ -95,7 +106,7 @@
         href="https://partner.mydashs.com"
         class="btn btn-success btn-rounded navbar-btn"
       >
-        Become a partner
+        {{ "MENU.partner" | translate }}
       </a>
     </div>
   </div>
@@ -118,27 +129,27 @@
         <div class="col-lg-8">
           <div class="hero-wrapper text-center mb-4">
             <p class="font-16 text-uppercase text-white-50">
-              Discover MyDash Today
+              {{ "HOME.discover" | translate }}
             </p>
             <h1 class="hero-title text-white mb-4">
-              The Right Address For Promotion Anyday
+              {{ "HOME.promotMessage" | translate }}
               <span class="text-primary">MyDash</span>
             </h1>
 
             <p class="text-white-50">
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour,
+              {{ "HOME.promotMessage1" | translate }}
             </p>
 
             <div class="mt-4">
               <a
                 href="https://partner.mydashs.com"
                 class="btn btn-primary mt-2 mr-2"
-                >Get Started</a
+                >{{ "HOME.start" | translate }}</a
               >
-              <a href="javascript: void(0);" class="btn btn-success mt-2 mr-2"
-                >Learn more</a
+              <a
+                href="javascript: void(0);"
+                class="btn btn-success mt-2 mr-2"
+                >{{ "HOME.learn" | translate }}</a
               >
             </div>
           </div>
