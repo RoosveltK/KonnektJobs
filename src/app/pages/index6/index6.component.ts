@@ -1,50 +1,53 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Component, OnInit, ViewEncapsulation } from "@angular/core";
+import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
-  selector: 'app-index6',
-  templateUrl: './index6.component.html',
-  styleUrls: ['./index6.component.scss'],
+  selector: "app-index6",
+  templateUrl: "./index6.component.html",
+  styleUrls: ["./index6.component.scss"],
   encapsulation: ViewEncapsulation.None,
-  styles: [`
-  .dark-modal .modal-content {
-    background-color: #000000;
-    color: white;
-    background: none;
-    border: none;
-  }
-  .dark-modal .modal-header {
-    border : none
-  }
-  .dark-modal .close {
-    color: white;
-  }
-  .dark-modal .modal-dialog {
-    max-width: 800px
-  }
-`]
+  styles: [
+    `
+      .dark-modal .modal-content {
+        background-color: #000000;
+        color: white;
+        background: none;
+        border: none;
+      }
+      .dark-modal .modal-header {
+        border: none;
+      }
+      .dark-modal .close {
+        color: white;
+      }
+      .dark-modal .modal-dialog {
+        max-width: 800px;
+      }
+    `,
+  ],
 })
 /**
  * Index-6 component
  */
 export class Index6Component implements OnInit {
+  currentSection = "home";
 
-  currentSection = 'home';
+  constructor(private modalService: NgbModal) {}
 
-  constructor(private modalService: NgbModal) { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   /**
    * Window scroll method
    */
   windowScroll() {
-    const navbar = document.getElementById('navbar');
-    if (document.body.scrollTop >= 50 || document.documentElement.scrollTop > 50) {
-      navbar.classList.add('nav-sticky');
+    const navbar = document.getElementById("navbar");
+    if (
+      document.body.scrollTop >= 50 ||
+      document.documentElement.scrollTop > 50
+    ) {
+      navbar.classList.add("nav-sticky");
     } else {
-      navbar.classList.remove('nav-sticky');
+      navbar.classList.remove("nav-sticky");
     }
   }
 
@@ -60,7 +63,7 @@ export class Index6Component implements OnInit {
    * Toggle navbar
    */
   toggleMenu() {
-    document.getElementById('navbarCollapse').classList.toggle('show');
+    document.getElementById("navbarCollapse").classList.toggle("show");
   }
 
   /**
@@ -68,6 +71,9 @@ export class Index6Component implements OnInit {
    * @param content content of modal
    */
   openWindowCustomClass(videocontent) {
-    this.modalService.open(videocontent, { windowClass: 'dark-modal', centered: true });
+    this.modalService.open(videocontent, {
+      windowClass: "dark-modal",
+      centered: true,
+    });
   }
 }

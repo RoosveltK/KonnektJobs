@@ -1,11 +1,13 @@
 import { TranslateService } from "@ngx-translate/core";
 import { DashLangService } from "./../../services/dash-lang.service";
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewEncapsulation } from "@angular/core";
+import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
   selector: "app-index5",
   templateUrl: "./index5.component.html",
   styleUrls: ["./index5.component.scss"],
+  encapsulation: ViewEncapsulation.None,
 })
 /**
  * Index-5 component
@@ -18,7 +20,8 @@ export class Index5Component implements OnInit {
 
   constructor(
     private langService: DashLangService,
-    private translatetor: TranslateService
+    private translatetor: TranslateService,
+    private modalService: NgbModal
   ) {}
 
   ngOnInit(): void {
@@ -70,5 +73,12 @@ export class Index5Component implements OnInit {
    */
   toggleMenu() {
     document.getElementById("navbarCollapse").classList.toggle("show");
+  }
+
+  openWindowCustomClass(videocontent) {
+    this.modalService.open(videocontent, {
+      windowClass: "dark-modal",
+      centered: true,
+    });
   }
 }

@@ -7,3 +7,19 @@
 .bg-overlay {
   height: 672px !important;
 }
+
+.dark-modal .modal-content {
+  background-color: #000000;
+  color: white;
+  background: none;
+  border: none;
+}
+.dark-modal .modal-header {
+  border: none;
+}
+.dark-modal .close {
+  color: white;
+}
+.dark-modal .modal-dialog {
+  max-width: 800px;
+}

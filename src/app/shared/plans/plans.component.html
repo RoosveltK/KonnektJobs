@@ -63,33 +63,38 @@
             {{ "PLAN.subscribe" | translate }}
           </h5>
           <h4 class="mb-3">{{ "PLAN.getBetter" | translate }}</h4>
-          <p>{{ "PLAN.seeMillions" | translate }}</p>
         </div>
       </div>
 
       <div class="col-xl-8 col-lg-10">
         <div class="text-center">
           <div class="subscribe">
-            <form>
-              <div class="row">
-                <div class="col-md-9">
-                  <div>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="esc xyz@gmail.com"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="mt-3 mt-md-0">
-                    <button type="button" class="btn btn-primary btn-block">
-                      {{ "PLAN.try" | translate }}
-                    </button>
-                  </div>
-                </div>
+            <div class="row">
+              <div class="col-lg-5 col-sm-12">
+                <a routerLink="/">
+                  <img
+                    class="app-logo"
+                    src="assets/images/play-store-logo.png"
+                    alt="Play store logo"
+                  />
+                </a>
               </div>
-            </form>
+              <div
+                class="col-lg-2 col-sm-12"
+                style="margin: 39px 0; padding: 10px"
+              >
+                {{ "PLAN.appChoice" | translate }}
+              </div>
+              <div class="col-lg-5 col-sm-12">
+                <a routerLink="/">
+                  <img
+                    class="app-logo"
+                    src="assets/images/app-store-logo.png"
+                    alt="App store logo"
+                  />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

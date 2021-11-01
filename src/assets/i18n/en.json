@@ -11,7 +11,8 @@
     "promotMessage": "The Right Address For Promotion Anyday",
     "promotMessage1": "You can easily manage promotions in your companies branches",
     "start": "Get Started",
-    "learn": "Learn more"
+    "learn": "Learn more",
+    "demo": "Demo"
   },
   "SERVICES": {
     "benefic": "Key benefits of using MyDash",
@@ -26,7 +27,8 @@
     "clientSays": "What our Client Say",
     "testimonial": "Testimonial",
     "clientSatisfied": "Satisfied Client",
-    "userDash": "MyDash User"
+    "userDash": "MyDash User",
+    "featured": "Featured brands"
   },
   "FOOTER": {
     "about": "About",
@@ -36,10 +38,11 @@
     "ourApps": "Our Apps"
   },
   "PLAN": {
-    "subscribe": "Subscribe",
-    "getBetter": "Get better purchases",
+    "subscribe": "Download",
+    "getBetter": "Download My Dashes app on :",
     "seeMillions": "See why millions of people accros 195 countries",
-    "try": "Try for free"
+    "try": "Try for free",
+    "appChoice": "OR"
   },
   "FEATURE": {
     "feature": "Products",
