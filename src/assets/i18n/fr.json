@@ -12,5 +12,31 @@
     "promotMessage1": "Vous gerez les promotions dans les agences de vos entreprises facilement",
     "start": "Commencer",
     "learn": "Apprendre encore plus"
+  },
+  "SERVICES": {
+    "benefic": "Principaux avantages de l'utilisation de MyDash"
+  },
+  "CLIENT": {
+    "clientSays": "Ce que disent nos clients",
+    "testimonial": "Témoignage",
+    "clientSatisfied": "Clients Satisfaits",
+    "userDash": "Utilisateur MyDash"
+  },
+  "FOOTER": {
+    "about": "A propos",
+    "company": "Companie",
+    "aboutUs": "A propos de nous",
+    "moreInfo": "Plus d'info",
+    "ourApps": "Nos applications"
+  },
+  "PLAN": {
+    "subscribe": "Souscrire",
+    "getBetter": "Obtenez de meilleurs achats",
+    "seeMillions": "Découvrez pourquoi des millions de personnes dans 195 pays",
+    "try": "Essayer"
+  },
+  "FEATURE": {
+    "feature": "Produits",
+    "featureProduct": "Produits récemment mis en avant"
   }
 }

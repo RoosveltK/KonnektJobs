@@ -1,18 +1,18 @@
 const serviceData = [
   {
-    icon: "grid",
-    title: "Get best discounts",
-    text: "To an English person, it will seem like English as skeptical.",
+    icon: "Percent",
+    title: `'SERVICES.service1'`,
+    text: `'SERVICES.service1.arg'`,
   },
   {
-    icon: "grid",
-    title: "Get gifts and rewards",
-    text: "If several languages coalesce, the grammar of the language.",
+    icon: "Gift",
+    title: `'SERVICES.service2'`,
+    text: `'SERVICES.service2.arg'`,
   },
   {
-    icon: "grid",
-    title: "Get fidelity cards",
-    text: "The languages only differ in their grammar their pronunciation",
+    icon: "credit-card",
+    title: `'SERVICES.service3'`,
+    text: `'SERVICES.service3.arg'`,
   },
 ];
 

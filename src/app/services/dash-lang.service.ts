@@ -31,4 +31,5 @@ export class DashLangService {
     this.langSelected = lang;
     localStorage.setItem(LANG_KEY, JSON.stringify(lang));
   }
+  translateInstant = (word) => this.translate.get(word);
 }

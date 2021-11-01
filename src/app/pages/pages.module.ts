@@ -36,7 +36,7 @@ import { TranslateModule } from "@ngx-translate/core";
     NgbModalModule,
     NgxYoutubePlayerModule,
     NgbModule,
-    TranslateModule,
+    // TranslateModule,
   ],
 })
 export class PagesModule {}

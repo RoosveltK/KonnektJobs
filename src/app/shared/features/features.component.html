@@ -4,15 +4,17 @@
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <div class="text-center mb-5">
-          <h5 class="text-primary text-uppercase small-title">Features</h5>
-          <h4 class="mb-3">Recently featured products</h4>
+          <h5 class="text-primary text-uppercase small-title">
+            {{ "FEATURE.feature" | translate }}
+          </h5>
+          <h4 class="mb-3">{{ "FEATURE.featureProduct" | translate }}</h4>
         </div>
       </div>
     </div>
     <!-- end row -->
 
     <div class="row">
-      <div class="col-lg-3">
+      <div class="col-lg-3 product-list">
         <!-- <div>
           <div class="avatar-md mb-4">
             <span class="avatar-title rounded-circle bg-soft-primary">
@@ -56,7 +58,47 @@
             ></a>
           </div>
         </div> -->
-        <img src="assets/images/feature-product-coca.png" />
+        <img src="assets/images/feature-product-coca1.png" />
+        <div class="container">
+          <div style="padding-top: 9px">
+            <div class="row" style="width: 200px; margin: 0 auto">
+              <div
+                class="col-7"
+                style="font-size: 16px; color: black; font-weight: 500"
+              >
+                Coca cola &nbsp;
+              </div>
+              <div class="col-2">
+                <i-feather
+                  class="icone-feature"
+                  name="heart"
+                  class="icon-dual-primary"
+                ></i-feather>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <i-feather
+                  class="icone-feature"
+                  name="calendar"
+                  class="icon-dual-primary"
+                ></i-feather>
+                &nbsp;Du <span>1er Sep </span> &nbsp; Au <span>21 Juil</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <i-feather
+                  class="icone-feature"
+                  name="shopping-bag"
+                  class="icon-dual-primary"
+                ></i-feather>
+                3 sachets = 1 offert
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="col-lg-3">
