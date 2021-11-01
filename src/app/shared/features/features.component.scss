@@ -9,8 +9,36 @@ i-feather {
 }
 
 .product-list {
-  background-color: #f8fefd;
-  width: 400px;
+  background-color: #f3fdfb;
+  width: 222px;
+  border-radius: 15px;
   height: 258px;
-  padding-top: 27px;
+  padding-top: 15px;
+
+  img {
+    padding-bottom: 10px;
+  }
+}
+
+.product-name {
+  font-size: 14px;
+  color: black;
+  font-weight: 600;
+  margin-left: 20px;
+  padding-bottom: 15px;
+}
+
+.promotion-during {
+  font-size: 12px;
+  i-feather {
+    width: 15px;
+    height: 15px;
+  }
+  span {
+    color: black;
+  }
+}
+
+.mb-pr {
+  margin-bottom: 20px;
 }

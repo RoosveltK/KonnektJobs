@@ -21,7 +21,8 @@
     "service2": "Get gifts and rewards",
     "service2.arg": "If several languages coalesce, the grammar of the language.",
     "service3": "Get fidelity cards",
-    "service3.arg": "The languages only differ in their grammar their pronunciation"
+    "service3.arg": "The languages only differ in their grammar their pronunciation",
+    "viewMore": "View more"
   },
   "CLIENT": {
     "clientSays": "What our Client Say",
