@@ -1,12 +1,6 @@
 <!--Navbar Start-->
 <nav
-  class="
-    navbar navbar-expand-lg
-    fixed-top
-    navbar-custom
-    sticky sticky-dark
-    navbar-light
-  "
+  class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark navbar-light"
   (window:scroll)="windowScroll()"
   id="navbar"
 >
@@ -71,12 +65,38 @@
             >{{ "MENU.features" | translate }}</a
           >
         </li>
-        <li ngbDropdown class="nav-item">
-          <div class="dropdown-language" id="dropdownBasic1" ngbDropdownToggle>
-            {{ "MENU.langEn" | translate }}
-          </div>
+        <li
+          class="nav-item"
+          [ngClass]="{ active: currentSection === 'partner' }"
+        >
+          <a
+            [ngxScrollTo]="'#partner'"
+            href="javascript: void(0);"
+            class="nav-link"
+            >{{ "MENU.partnerM" | translate }}</a
+          >
+        </li>
+        <li ngbDropdown style="cursor: pointer" class="nav-item">
+          <a
+            class="dropdown-language nav-link"
+            id="dropdownBasic1"
+            ngbDropdownToggle
+          >
+            {{ fullNameLang }}
+          </a>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button ngbDropdownItem>French</button>
+            <button
+              *ngFor="let lang of languages"
+              (click)="changeLanguage(lang)"
+              ngbDropdownItem
+            >
+              <span *ngIf="lang.value !== selected && selected == 'en'"
+                >French</span
+              >
+              <span *ngIf="lang.value !== selected && selected == 'fr'"
+                >Anglais</span
+              >
+            </button>
           </div>
         </li>
       </ul>

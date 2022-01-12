@@ -63,6 +63,7 @@ import { FeaturesComponent } from "./features/features.component";
 import { ClientsComponent } from "./clients/clients.component";
 import { PlansComponent } from "./plans/plans.component";
 import { FooterComponent } from "./footer/footer.component";
+import { PartnerComponent } from "./partner/partner.component";
 
 @NgModule({
   declarations: [
@@ -72,6 +73,7 @@ import { FooterComponent } from "./footer/footer.component";
     PlansComponent,
     FooterComponent,
     ScrollspyDirective,
+    PartnerComponent,
   ],
   imports: [
     CommonModule,
@@ -89,6 +91,7 @@ import { FooterComponent } from "./footer/footer.component";
     ScrollspyDirective,
     FeatherModule,
     TranslateModule,
+    PartnerComponent,
   ],
 })
 export class SharedModule {}

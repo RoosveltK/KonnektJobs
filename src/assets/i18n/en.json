@@ -4,7 +4,8 @@
     "features": "Products",
     "langEn": "English",
     "langFr": "French",
-    "partner": "Become a partner"
+    "partner": "Become a partner",
+    "partnerM": "Partners"
   },
   "HOME": {
     "discover": "Discover MyDash Today",
@@ -48,5 +49,9 @@
   "FEATURE": {
     "feature": "Products",
     "featureProduct": "Recently featured products"
+  },
+  "PARTNER": {
+    "ourPartner": "Our partners",
+    "trustedUs": "Those who trusted us"
   }
 }

@@ -1,12 +1,6 @@
 <!--Navbar Start-->
 <nav
-  class="
-    navbar navbar-expand-lg
-    fixed-top
-    navbar-custom
-    sticky sticky-dark
-    navbar-light
-  "
+  class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark navbar-light"
   (window:scroll)="windowScroll()"
   id="navbar"
 >
@@ -82,10 +76,25 @@
             >Clients</a
           >
         </li>
+        <li
+          class="nav-item"
+          [ngClass]="{ active: currentSection === 'partner' }"
+        >
+          <a
+            [ngxScrollTo]="'#partner'"
+            href="javascript: void(0);"
+            class="nav-link"
+            >{{ "MENU.partnerM" | translate }}</a
+          >
+        </li>
         <li ngbDropdown style="cursor: pointer" class="nav-item">
-          <div class="dropdown-language" id="dropdownBasic1" ngbDropdownToggle>
+          <a
+            class="dropdown-language nav-link"
+            id="dropdownBasic1"
+            ngbDropdownToggle
+          >
             {{ fullNameLang }}
-          </div>
+          </a>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <button
               *ngFor="let lang of languages"
@@ -118,81 +127,156 @@
   (sectionChange)="onSectionChange($event)"
 >
   <!-- Hero section Start -->
-  <section
-    class="hero-section-5"
-    id="home"
-    style="background: url(assets/images/Home.png); max-height: 672px"
-  >
-    <div class="bg-overlay"></div>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="hero-wrapper text-center mb-4">
-            <p class="font-16 text-uppercase text-white-50">
-              {{ "HOME.discover" | translate }}
-            </p>
-            <h1 class="hero-title text-white mb-4">
-              {{ "HOME.promotMessage" | translate }}
-              <span class="text-primary">MyDash</span>
-            </h1>
+  <section class="hero-section-5" id="home">
+    <ngb-carousel *ngIf="slidesStore">
+      <ng-template ngbSlide *ngFor="let slide of slidesStore">
+        <div class="picsum-img-wrapper">
+          <img [src]="slide.link" [alt]="slide.title" />
+        </div>
+        <div class="carousel-caption">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="hero-wrapper text-center mb-4">
+                  <p class="font-16 text-uppercase text-white-50">
+                    {{ "HOME.discover" | translate }}
+                  </p>
+                  <h1 class="hero-title text-white mb-4">
+                    {{ "HOME.promotMessage" | translate }}
+                    <span class="text-primary">MyDash</span>
+                  </h1>
 
-            <p class="text-white-50">
-              {{ "HOME.promotMessage1" | translate }}
-            </p>
+                  <p class="text-white-50">
+                    {{ "HOME.promotMessage1" | translate }}
+                  </p>
 
-            <div class="mt-4">
-              <a
-                href="https://partner.mydashs.com"
-                class="btn btn-primary mt-2 mr-2"
-                >{{ "HOME.start" | translate }}</a
-              >
-              <a
-                href="javascript: void(0);"
-                class="btn btn-success mt-2 mr-2"
-                >{{ "HOME.learn" | translate }}</a
-              >
-              <a
-                href="javascript: void(0);"
-                (click)="openWindowCustomClass(videocontent)"
-                class="btn btn-primary mt-2 mr-2"
-                >{{ "HOME.demo" | translate }}</a
-              >
-
-              <div class="watch-video pt-5">
-                <ng-template #videocontent let-modal class="video-modal">
-                  <div class="modal-header">
-                    <button
-                      type="button"
-                      class="close"
-                      aria-label="Close"
-                      (click)="modal.dismiss('Cross click')"
+                  <div class="mt-4">
+                    <a
+                      href="https://partner.mydashs.com"
+                      class="btn btn-primary mt-2 mr-2"
+                      >{{ "HOME.start" | translate }}</a
                     >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body p-0">
-                    <youtube-player
-                      [videoId]="'JlvxDa7Sges'"
-                      height="450"
-                      width="780"
+                    <a
+                      href="javascript: void(0);"
+                      class="btn btn-success mt-2 mr-2"
+                      >{{ "HOME.learn" | translate }}</a
                     >
-                    </youtube-player>
+                    <a
+                      href="javascript: void(0);"
+                      (click)="openWindowCustomClass(videocontent)"
+                      class="btn btn-primary mt-2 mr-2"
+                      >{{ "HOME.demo" | translate }}</a
+                    >
+
+                    <div class="watch-video pt-5">
+                      <ng-template #videocontent let-modal class="video-modal">
+                        <div class="modal-header">
+                          <button
+                            type="button"
+                            class="close"
+                            aria-label="Close"
+                            (click)="modal.dismiss('Cross click')"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body p-0">
+                          <youtube-player
+                            [videoId]="'JlvxDa7Sges'"
+                            height="450"
+                            width="780"
+                          >
+                          </youtube-player>
+                        </div>
+                      </ng-template>
+                    </div>
                   </div>
-                </ng-template>
+                </div>
               </div>
             </div>
+            <!-- end row -->
           </div>
         </div>
-      </div>
-      <!-- end row -->
-    </div>
-
-    <!-- end container -->
+      </ng-template>
+    </ngb-carousel>
   </section>
+
   <!-- Hero section End -->
   <app-services></app-services>
   <app-features></app-features>
   <app-clients></app-clients>
+  <app-partner></app-partner>
   <app-plans></app-plans>
   <app-footer></app-footer>
 </div>
+
+<!-- <section
+class="hero-section-5"
+id="home"
+style="background: url(assets/images/Home.png) center center"
+>
+<div class="bg-overlay"></div>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="hero-wrapper text-center mb-4">
+        <p class="font-16 text-uppercase text-white-50">
+          {{ "HOME.discover" | translate }}
+        </p>
+        <h1 class="hero-title text-white mb-4">
+          {{ "HOME.promotMessage" | translate }}
+          <span class="text-primary">MyDash</span>
+        </h1>
+
+        <p class="text-white-50">
+          {{ "HOME.promotMessage1" | translate }}
+        </p>
+
+        <div class="mt-4">
+          <a
+            href="https://partner.mydashs.com"
+            class="btn btn-primary mt-2 mr-2"
+            >{{ "HOME.start" | translate }}</a
+          >
+          <a
+            href="javascript: void(0);"
+            class="btn btn-success mt-2 mr-2"
+            >{{ "HOME.learn" | translate }}</a
+          >
+          <a
+            href="javascript: void(0);"
+            (click)="openWindowCustomClass(videocontent)"
+            class="btn btn-primary mt-2 mr-2"
+            >{{ "HOME.demo" | translate }}</a
+          >
+
+          <div class="watch-video pt-5">
+            <ng-template #videocontent let-modal class="video-modal">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  aria-label="Close"
+                  (click)="modal.dismiss('Cross click')"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body p-0">
+                <youtube-player
+                  [videoId]="'JlvxDa7Sges'"
+                  height="450"
+                  width="780"
+                >
+                </youtube-player>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</section> -->

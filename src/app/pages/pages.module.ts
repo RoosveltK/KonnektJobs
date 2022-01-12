@@ -18,6 +18,7 @@ import { Index6Component } from "./index6/index6.component";
 import { NgbModalModule } from "@ng-bootstrap/ng-bootstrap";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { TranslateModule } from "@ngx-translate/core";
+import { CarouselModule } from "ngx-owl-carousel-o";
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { TranslateModule } from "@ngx-translate/core";
     NgbModalModule,
     NgxYoutubePlayerModule,
     NgbModule,
+    CarouselModule,
     // TranslateModule,
   ],
 })

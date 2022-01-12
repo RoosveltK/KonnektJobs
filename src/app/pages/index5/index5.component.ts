@@ -2,6 +2,7 @@ import { TranslateService } from "@ngx-translate/core";
 import { DashLangService } from "./../../services/dash-lang.service";
 import { Component, OnInit, ViewEncapsulation } from "@angular/core";
 import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
+import { OwlOptions } from "ngx-owl-carousel-o";
 
 @Component({
   selector: "app-index5",
@@ -14,9 +15,55 @@ import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
  */
 export class Index5Component implements OnInit {
   currentSection = "home";
+  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
   languages = [];
   fullNameLang;
   selected = "";
+  customOptions: OwlOptions = {
+    margin: 10,
+    loop: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      576: {
+        items: 2,
+      },
+    },
+    nav: true,
+    navText: [
+      "<i class='mdi mdi-chevron-left'></i>",
+      "<i class='mdi mdi-chevron-right'></i>",
+    ],
+  };
+
+  options: OwlOptions = {
+    navText: [
+      '<i class="mdi mdi-chevron-left"></i>',
+      '<i class="mdi mdi-chevron-right"></i>',
+    ],
+  };
+
+  slidesStore = [
+    {
+      id: 1,
+      alt: "image_1",
+      title: "dash",
+      link: "assets/images/Home.png",
+    },
+    {
+      id: 2,
+      alt: "image_2",
+      title: "default",
+      link: "assets/images/bg.png",
+    },
+    {
+      id: 2,
+      alt: "image_3",
+      title: "home",
+      link: "assets/images/home-img.png",
+    },
+  ];
 
   constructor(
     private langService: DashLangService,
@@ -80,5 +127,12 @@ export class Index5Component implements OnInit {
       windowClass: "dark-modal",
       centered: true,
     });
+  }
+
+  setStyles(imgUrl: string) {
+    return {
+      "background-image": `url('${imgUrl}')`,
+      "max-height": "672px",
+    };
   }
 }
