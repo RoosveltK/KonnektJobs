@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from "@angular/core";
 import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
+import { DashLangService } from "src/app/services/dash-lang.service";
 
 @Component({
   selector: "app-index6",
@@ -31,10 +32,35 @@ import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
  */
 export class Index6Component implements OnInit {
   currentSection = "home";
+  languages = [];
+  fullNameLang;
+  selected = "";
 
-  constructor(private modalService: NgbModal) {}
+  constructor(
+    private modalService: NgbModal,
+    private langService: DashLangService
+  ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.languages = this.langService.getLanguages();
+    this.selected = this.langService.langSelected;
+
+    if (this.selected == "" || this.selected == "en") {
+      this.selected = "en";
+      this.fullNameLang = "English";
+    } else this.fullNameLang = "Français";
+  }
+
+  changeLanguage(elt) {
+    this.langService.setLanguage(elt.value);
+
+    this.selected = this.langService.langSelected;
+
+    if (this.selected == "en") {
+      this.selected = "en";
+      this.fullNameLang = "English";
+    } else this.fullNameLang = "Français";
+  }
 
   /**
    * Window scroll method

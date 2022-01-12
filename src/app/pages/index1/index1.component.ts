@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { DashLangService } from "src/app/services/dash-lang.service";
 
 @Component({
   selector: "app-index1",
@@ -11,11 +12,32 @@ import { Component, OnInit } from "@angular/core";
  */
 export class Index1Component implements OnInit {
   currentSection = "home";
+  languages = [];
+  fullNameLang;
+  selected = "";
 
-  constructor() {}
+  constructor(private langService: DashLangService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.languages = this.langService.getLanguages();
+    this.selected = this.langService.langSelected;
 
+    if (this.selected == "" || this.selected == "en") {
+      this.selected = "en";
+      this.fullNameLang = "English";
+    } else this.fullNameLang = "Français";
+  }
+
+  changeLanguage(elt) {
+    this.langService.setLanguage(elt.value);
+
+    this.selected = this.langService.langSelected;
+
+    if (this.selected == "en") {
+      this.selected = "en";
+      this.fullNameLang = "English";
+    } else this.fullNameLang = "Français";
+  }
   /**
    * Window scroll method
    */
