@@ -1,3 +1,5 @@
+@import "src/assets/scss/_variables";
+
 .dropdown-language {
   color: #f60f4f !important;
 }
@@ -19,4 +21,26 @@
 }
 .dark-modal .modal-dialog {
   max-width: 800px;
+}
+
+// .login-carousel-item img {
+//   margin: 3rem 0;
+//   height: 10rem;
+// }
+
+// ::ng-deep {
+//   .carousel-inner,
+//   .carousel-item {
+//     height: 100%;
+//   }
+//   .carousel-inner {
+//     background: transparentize($primary, 0.5);
+//   }
+// }
+
+.img-review {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }

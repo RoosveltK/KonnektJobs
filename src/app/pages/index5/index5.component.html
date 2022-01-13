@@ -127,11 +127,12 @@
   (sectionChange)="onSectionChange($event)"
 >
   <!-- Hero section Start -->
-  <section class="hero-section-5" id="home">
-    <ngb-carousel *ngIf="slidesStore">
+  <section id="home">
+    <ngb-carousel *ngIf="slidesStore" interval="500000">
       <ng-template ngbSlide *ngFor="let slide of slidesStore">
         <div class="picsum-img-wrapper">
-          <img [src]="slide.link" [alt]="slide.title" />
+          <div class="img-review"></div>
+          <img [src]="slide.link" [alt]="slide.title" class="h-100 w-100" />
         </div>
         <div class="carousel-caption">
           <div class="container">
