@@ -16,15 +16,19 @@
     "learn": "Apprendre encore plus",
     "demo": "Démo"
   },
+  "ABOUT": {
+    "title": "A propos de nous"
+  },
   "SERVICES": {
-    "benefic": "Principaux avantages de l'utilisation de MyDash",
-    "service1": "Obtenez les meilleures remises",
-    "service1.arg": "To an English person, it will seem like English as skeptical.",
-    "service2": "Obtenez des cadeaux et des réductions",
-    "service2.arg": "If several languages coalesce, the grammar of the language.",
-    "service3": "Obtenez des cartes de fidelité",
-    "service3.arg": "The languages only differ in their grammar their pronunciation",
-    "viewMore": "Voir plus"
+    "title": "Nos services",
+    "recherche": "recherche",
+    "rechercheText": "Nous recherchons des professionnels en Afrique pour le secteur de la santé, p. ex. des infirmiers, physiothérapeutes, apprentis et médecins et les placent en Allemagne et en Europe.",
+    "apprentissage": "apprentissage",
+    "apprentissageText": "Nous recherchons des professionnels en Afrique pour le secteur de la santé, p. ex. des infirmiers, physiothérapeutes, apprentis et médecins et les placent en Allemagne et en Europe.",
+    "recrutement": "recrutement",
+    "recrutementText": "Nous recherchons des professionnels en Afrique pour le secteur de la santé, p. ex. des infirmiers, physiothérapeutes, apprentis et médecins et les placent en Allemagne et en Europe.",
+    "viewMore": "Voir plus",
+    "viewMin": "Voir moins"
   },
   "CLIENT": {
     "clientSays": "Ce que disent nos clients",

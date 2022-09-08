@@ -82,6 +82,7 @@ export class Index6Component implements OnInit {
    * @param sectionId specify the current sectionID
    */
   onSectionChange(sectionId: string) {
+    console.log(sectionId);
     this.currentSection = sectionId;
   }
 
