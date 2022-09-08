@@ -1,5 +1,5 @@
 export interface Services {
-    icon: string;
-    title: string;
-    text: string;
+  id: number;
+  title: string;
+  text: string;
 }
