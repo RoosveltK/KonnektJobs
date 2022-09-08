@@ -64,6 +64,7 @@ import { ClientsComponent } from "./clients/clients.component";
 import { PlansComponent } from "./plans/plans.component";
 import { FooterComponent } from "./footer/footer.component";
 import { PartnerComponent } from "./partner/partner.component";
+import { AboutComponent } from "./about/about.component";
 
 @NgModule({
   declarations: [
@@ -74,6 +75,7 @@ import { PartnerComponent } from "./partner/partner.component";
     FooterComponent,
     ScrollspyDirective,
     PartnerComponent,
+    AboutComponent,
   ],
   imports: [
     CommonModule,
@@ -92,6 +94,7 @@ import { PartnerComponent } from "./partner/partner.component";
     FeatherModule,
     TranslateModule,
     PartnerComponent,
+    AboutComponent,
   ],
 })
 export class SharedModule {}

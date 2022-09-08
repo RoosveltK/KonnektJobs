@@ -1,19 +1,49 @@
 const serviceData = [
   {
-    icon: "Percent",
-    title: "SERVICES.service1",
-    text: "SERVICES.service1.arg",
+    id: 1,
+    title: "SERVICES.recherche",
+    text: "SERVICES.rechercheText",
   },
   {
-    icon: "Gift",
-    title: "SERVICES.service2",
-    text: "SERVICES.service2.arg",
+    id: 2,
+    title: "SERVICES.apprentissage",
+    text: "SERVICES.apprentissageText",
   },
   {
-    icon: "credit-card",
-    title: "SERVICES.service3",
-    text: "SERVICES.service3.arg",
+    id: 3,
+    title: "SERVICES.recrutement",
+    text: "SERVICES.recrutementText",
   },
+  // {
+  //   id: 4,
+  //   title: "SERVICES.recherche",
+  //   text: "SERVICES.rechercheText",
+  // },
+  // {
+  //   id: 5,
+  //   title: "SERVICES.apprentissage",
+  //   text: "SERVICES.apprentissageText",
+  // },
+  // {
+  //   id: 6,
+  //   title: "SERVICES.recrutement",
+  //   text: "SERVICES.recrutementText",
+  // },
+  // {
+  //   id: 7,
+  //   title: "SERVICES.recherche",
+  //   text: "SERVICES.rechercheText",
+  // },
+  // {
+  //   id: 8,
+  //   title: "SERVICES.apprentissage",
+  //   text: "SERVICES.apprentissageText",
+  // },
+  // {
+  //   id: 9,
+  //   title: "SERVICES.recrutement",
+  //   text: "SERVICES.recrutementText",
+  // },
 ];
 
 export { serviceData };
