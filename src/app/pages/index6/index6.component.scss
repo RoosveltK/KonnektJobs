@@ -1,1 +1,15 @@
+.active {
+  border-bottom: 3px solid #e0a2c7 !important;
+  color: #e0a2c7 !important;
+  a {
+    color: #e0a2c7 !important;
+  }
+}
 
+.navbar-light .navbar-nav .nav-item .nav-link {
+  color: black;
+}
+
+.btn-link {
+  padding: 0.5rem 0.75rem !important;
+}

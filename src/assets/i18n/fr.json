@@ -4,8 +4,9 @@
     "features": "Produits",
     "langEn": "Anglais",
     "langFr": "Français",
-    "partner": "Devenir partenaire",
-    "partnerM": "Partenaires"
+    "partnerM": "Partenaires",
+    "about": "A propos",
+    "contact_us": "Contactez-nous"
   },
   "HOME": {
     "discover": "Adopter MyDash dès aujourd'hui ",

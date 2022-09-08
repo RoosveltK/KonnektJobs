@@ -33,6 +33,7 @@
     >
       <i class="mdi mdi-menu"></i>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
         <li class="nav-item" [ngClass]="{ active: currentSection === 'home' }">
@@ -41,6 +42,14 @@
             href="javascript: void(0);"
             class="nav-link"
             >{{ "MENU.home" | translate }}</a
+          >
+        </li>
+        <li class="nav-item" [ngClass]="{ active: currentSection === 'about' }">
+          <a
+            [ngxScrollTo]="'#about'"
+            href="javascript: void(0);"
+            class="nav-link"
+            >{{ "MENU.about" | translate }}</a
           >
         </li>
         <li
@@ -65,18 +74,13 @@
             >{{ "MENU.features" | translate }}</a
           >
         </li>
-        <li
-          class="nav-item"
-          [ngClass]="{ active: currentSection === 'partner' }"
+        <a
+          href="https://partner.mydashs.com"
+          class="btn btn-primary btn-rounded btn-link"
         >
-          <a
-            [ngxScrollTo]="'#partner'"
-            href="javascript: void(0);"
-            class="nav-link"
-            >{{ "MENU.partnerM" | translate }}</a
-          >
-        </li>
-        <li ngbDropdown style="cursor: pointer" class="nav-item">
+          {{ "MENU.contact_us" | translate }}
+        </a>
+        <!-- <li ngbDropdown style="cursor: pointer" class="nav-item">
           <a
             class="dropdown-language nav-link"
             id="dropdownBasic1"
@@ -98,14 +102,8 @@
               >
             </button>
           </div>
-        </li>
+        </li> -->
       </ul>
-      <a
-        href="https://partner.mydashs.com"
-        class="btn btn-success btn-rounded navbar-btn"
-      >
-        {{ "MENU.partner" | translate }}
-      </a>
     </div>
   </div>
 </nav>
@@ -116,51 +114,31 @@
   (sectionChange)="onSectionChange($event)"
 >
   <!-- Hero section Start -->
-  <section class="hero-section-2 bg-primary" id="home">
+  <section class="hero-section-2 bg-custom" id="home">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="hero-wrapper text-center mb-4">
-            <p class="font-16 text-white-50 text-uppercase">
-              Discover MyDash Today
-            </p>
-            <h1 class="hero-title text-white mb-4">
-              Make your Site Amazing & Unique with
-              <span class="text-success">MyDash</span>
+            <h1 class="hero-title text-black mb-4">
+              In
+              <span class="text-success">Skill,</span>
             </h1>
+            <p class="font-16 text-black-50 text-uppercase">we trust</p>
 
-            <p class="text-white-50">
-              To an English person, it will seem like simplified English, as a
-              skeptical Cambridge friend of mine occidental
+            <p class="text-black-50">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
+              nunc morbi accumsan donec. Molestie amet faucibus venenatis sit
+              nibh. Quis mattis egestas habitant vitae. Hendrerit accumsan risus
+              mi, etiam massa commodo sodales donec lacus. In at viverra est at
+              viverra porta. Et elementum cras venenatis, risus aliquet dui
             </p>
 
             <div class="watch-video pt-5">
               <a
-                (click)="openWindowCustomClass(videocontent)"
-                class="video-play-icon text-light"
-                ><i class="mdi mdi-play play-icon-circle play play-iconbar"></i>
-                WATCH VIDEO</a
+                href="https://partner.mydashs.com"
+                class="btn btn-primary mt-2 mr-2 btn-rounded"
+                >Discover</a
               >
-              <ng-template #videocontent let-modal class="video-modal">
-                <div class="modal-header">
-                  <button
-                    type="button"
-                    class="close"
-                    aria-label="Close"
-                    (click)="modal.dismiss('Cross click')"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body p-0">
-                  <youtube-player
-                    [videoId]="'JlvxDa7Sges'"
-                    height="450"
-                    width="780"
-                  >
-                  </youtube-player>
-                </div>
-              </ng-template>
             </div>
           </div>
         </div>
