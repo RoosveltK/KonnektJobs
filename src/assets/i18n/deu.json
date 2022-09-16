@@ -9,9 +9,9 @@
     "contact_us": "Contactez-nous"
   },
   "HOME": {
-    "title": "Bienvenue",
-    "subtitle": "Médecin? Infirmier? Bachelier ou licencié en quête d’opportunités et d’ouvertures?",
-    "description": "Vous rêvez d’une vie professionnelle accomplie? Vous rêvez d’un travail stable, bien rémunéré et oú vous êtes respectés? Vous rêvez d’une formation professionnelle sérieuse avec un salaire confortable ?Venez travailler en Allemagne! Le pays de Goethe vous attend à bras ouvert.Faites-nous confiance, nous vous aidons à réaliser vos rêves."
+    "title": "Unsere Vision",
+    "subtitle": "Menschen, Welten und Kompetenzen für eine gegenseitige Bereicherung miteinander verbinden!",
+    "description": "In Deutschland und Europa gibt es einen großen Bedarf an Fachkräften, insbesondere in der Gesundheitsbranche. In anderen Teilen der Welt gibt es sehr viele sehr gut ausgebildete Fachkräfte. Diese haben entweder keine Arbeit oder wünschen sich bessere Arbeitsbedingungen. Deutschland und Europa ieten gute Arbeitsbedingungen. Unser Anliegen: Eine Brücke bauen, damit Fachkräfte nach Deutschland bzw. Europa kommen. Eine Win-win-Situation für alle Beteiligten!"
   },
   "ABOUT": {
     "title": "A propos de nous"
@@ -58,6 +58,6 @@
   },
   "LANG": {
     "fr": "FR",
-    "deu": "ALL"
+    "deu": "DEU"
   }
 }

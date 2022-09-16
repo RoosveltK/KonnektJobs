@@ -54,6 +54,28 @@
             >Services</a
           >
         </li>
+        <li ngbDropdown style="cursor: pointer" class="nav-item">
+          <a
+            class="dropdown-language nav-link"
+            id="dropdownBasic1"
+            ngbDropdownToggle
+          >
+            {{ fullNameLang.text | translate | lowercase }}
+            <img [src]="fullNameLang.flag" class="flag" />
+          </a>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button
+              *ngFor="let lang of languages"
+              (click)="changeLanguage(lang)"
+              ngbDropdownItem
+            >
+              <span>
+                {{ lang.text | translate | lowercase }} &nbsp;
+                <img [src]="lang.flag" class="flag" />
+              </span>
+            </button>
+          </div>
+        </li>
         <!-- <li
           class="nav-item"
           [ngClass]="{ active: currentSection === 'features' }"
@@ -105,38 +127,47 @@
   (sectionChange)="onSectionChange($event)"
 >
   <!-- Hero section Start -->
-  <section class="hero-section-2 bg-custom" id="home">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="hero-wrapper text-center mb-4">
-            <h1 class="hero-title text-black mb-4">
-              In
-              <span class="text-success">Skill,</span>
-            </h1>
-            <p class="font-16 text-black-50 text-uppercase">we trust</p>
 
-            <p class="text-black-50 text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
-              nunc morbi accumsan donec. Molestie amet faucibus venenatis sit
-              nibh. Quis mattis egestas habitant vitae. Hendrerit accumsan risus
-              mi, etiam massa commodo sodales donec lacus. In at viverra est at
-              viverra porta. Et elementum cras venenatis, risus aliquet dui
-            </p>
+  <section id="home">
+    <ngb-carousel *ngIf="slidesStore" interval="5000">
+      <ng-template ngbSlide *ngFor="let slide of slidesStore">
+        <div class="picsum-img-wrapper">
+          <div class="img-review"></div>
+          <img [src]="slide.link" [alt]="slide.title" class="h-100 w-100" />
+        </div>
+        <div class="carousel-caption">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="hero-wrapper text-center mb-4">
+                  <h1 class="hero-title text-black mb-4">
+                    <span class="text-success">{{
+                      "HOME.title" | translate
+                    }}</span>
+                  </h1>
+                  <p class="font-16 text-black-50 text-uppercase">
+                    {{ "HOME.subtitle" | translate }}
+                  </p>
 
-            <div class="watch-video pt-5">
-              <a
-                href="https://partner.mydashs.com"
-                class="btn btn-primary mt-2 mr-2 btn-rounded"
-                >Discover</a
-              >
+                  <p class="text-black-50 text-justify">
+                    {{ "HOME.description" | translate }}
+                  </p>
+
+                  <div class="watch-video pt-5">
+                    <a
+                      href="https://partner.mydashs.com"
+                      class="btn btn-primary mt-2 mr-2 btn-rounded"
+                      >Discover</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- end row -->
           </div>
         </div>
-      </div>
-      <!-- end row -->
-    </div>
-    <!-- end container -->
+      </ng-template>
+    </ngb-carousel>
   </section>
 
   <!-- Hero section End -->

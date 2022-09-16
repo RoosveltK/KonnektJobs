@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from "@angular/core";
 import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
+import { OwlOptions } from "ngx-owl-carousel-o";
 import { DashLangService } from "src/app/services/dash-lang.service";
 
 @Component({
@@ -36,6 +37,52 @@ export class Index6Component implements OnInit {
   fullNameLang;
   selected = "";
 
+  customOptions: OwlOptions = {
+    margin: 10,
+    loop: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      576: {
+        items: 2,
+      },
+    },
+    nav: true,
+    navText: [
+      "<i class='mdi mdi-chevron-left'></i>",
+      "<i class='mdi mdi-chevron-right'></i>",
+    ],
+  };
+
+  options: OwlOptions = {
+    navText: [
+      '<i class="mdi mdi-chevron-left"></i>',
+      '<i class="mdi mdi-chevron-right"></i>',
+    ],
+  };
+
+  slidesStore = [
+    {
+      id: 1,
+      alt: "image_1",
+      title: "dash",
+      link: "assets/images/Home.png",
+    },
+    {
+      id: 2,
+      alt: "image_2",
+      title: "default",
+      link: "assets/images/bg.png",
+    },
+    {
+      id: 2,
+      alt: "image_3",
+      title: "home",
+      link: "assets/images/home-img.png",
+    },
+  ];
+
   constructor(
     private modalService: NgbModal,
     private langService: DashLangService
@@ -43,23 +90,14 @@ export class Index6Component implements OnInit {
 
   ngOnInit(): void {
     this.languages = this.langService.getLanguages();
-    this.selected = this.langService.langSelected;
-
-    if (this.selected == "" || this.selected == "en") {
-      this.selected = "en";
-      this.fullNameLang = "English";
-    } else this.fullNameLang = "Français";
+    this.fullNameLang = this.langService.langSelected;
+    this.selected = this.fullNameLang.value;
   }
 
   changeLanguage(elt) {
     this.langService.setLanguage(elt.value);
-
-    this.selected = this.langService.langSelected;
-
-    if (this.selected == "en") {
-      this.selected = "en";
-      this.fullNameLang = "English";
-    } else this.fullNameLang = "Français";
+    this.fullNameLang = this.langService.langSelected;
+    this.selected = this.fullNameLang.value;
   }
 
   /**
