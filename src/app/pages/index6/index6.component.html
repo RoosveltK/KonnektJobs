@@ -9,7 +9,7 @@
     <a class="logo text-uppercase" href="/">
       <img src="assets/img/logo.png" class="logo-light" alt="" height="50" />
       <img src="assets/img/logo.png" alt="" class="logo-dark" height="50" />
-      <span class="text-black-50 p-2">KonnektJobs</span>
+      <span class="text-white p-2 app-title">KonnektJobs</span>
     </a>
 
     <button
@@ -76,46 +76,14 @@
             </button>
           </div>
         </li>
-        <!-- <li
-          class="nav-item"
-          [ngClass]="{ active: currentSection === 'features' }"
-        >
-          <a
-            [ngxScrollTo]="'#features'"
-            href="javascript: void(0);"
-            class="nav-link"
-            >{{ "MENU.features" | translate }}</a
-          >
-        </li> -->
+
         <a
-          href="https://partner.mydashs.com"
+          [ngxScrollTo]="'#contact'"
+          href="javascript: void(0);"
           class="btn btn-primary btn-rounded btn-link"
         >
           {{ "MENU.contact_us" | translate }}
         </a>
-        <!-- <li ngbDropdown style="cursor: pointer" class="nav-item">
-          <a
-            class="dropdown-language nav-link"
-            id="dropdownBasic1"
-            ngbDropdownToggle
-          >
-            {{ fullNameLang }}
-          </a>
-          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button
-              *ngFor="let lang of languages"
-              (click)="changeLanguage(lang)"
-              ngbDropdownItem
-            >
-              <span *ngIf="lang.value !== selected && selected == 'en'"
-                >French</span
-              >
-              <span *ngIf="lang.value !== selected && selected == 'fr'"
-                >Anglais</span
-              >
-            </button>
-          </div>
-        </li> -->
       </ul>
     </div>
   </div>
@@ -129,7 +97,7 @@
   <!-- Hero section Start -->
 
   <section id="home">
-    <ngb-carousel *ngIf="slidesStore" interval="5000">
+    <ngb-carousel *ngIf="slidesStore" interval="500000">
       <ng-template ngbSlide *ngFor="let slide of slidesStore">
         <div class="picsum-img-wrapper">
           <div class="img-review"></div>
@@ -145,20 +113,23 @@
                       "HOME.title" | translate
                     }}</span>
                   </h1>
-                  <p class="font-16 text-black-50 text-uppercase">
+                  <p class="font-16 text-white">
                     {{ "HOME.subtitle" | translate }}
                   </p>
 
-                  <p class="text-black-50 text-justify">
-                    {{ "HOME.description" | translate }}
-                  </p>
+                  <p
+                    class="text-white text-center"
+                    [innerHTML]="'HOME.description' | translate"
+                  ></p>
 
                   <div class="watch-video pt-5">
                     <a
-                      href="https://partner.mydashs.com"
-                      class="btn btn-primary mt-2 mr-2 btn-rounded"
-                      >Discover</a
+                      [ngxScrollTo]="'#about'"
+                      href="javascript: void(0);"
+                      class="btn btn-primary mt-2 mr-2 btn-rounded text-white"
                     >
+                      {{ "HOME.start" | translate }}
+                    </a>
                   </div>
                 </div>
               </div>
@@ -171,8 +142,12 @@
   </section>
 
   <!-- Hero section End -->
-  <app-about></app-about>
+  <section id="about">
+    <app-our-vision></app-our-vision>
+    <app-our-procedure></app-our-procedure>
+  </section>
   <app-plans></app-plans>
   <app-services></app-services>
+  <app-contact-us></app-contact-us>
   <app-footer></app-footer>
 </div>

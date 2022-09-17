@@ -6,12 +6,25 @@
   }
 }
 
+.nav-sticky .app-title {
+  color: rgba(52, 58, 64, 0.9) !important;
+}
+
 .navbar-light .navbar-nav .nav-item .nav-link {
-  color: black;
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .navbar-light .navbar-nav .nav-item .nav-link {
+    color: rgba(52, 58, 64, 0.9) !important;
+  }
+  .app-title {
+    color: rgba(52, 58, 64, 0.9) !important;
+  }
 }
 
 .dropdown-language {
-  color: black !important;
+  color: white !important;
 }
 
 .btn-link {
@@ -20,4 +33,11 @@
 
 .flag {
   max-width: 30px;
+}
+
+.img-review {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }

@@ -66,20 +66,21 @@ export class Index6Component implements OnInit {
     {
       id: 1,
       alt: "image_1",
-      title: "dash",
-      link: "assets/images/Home.png",
+      title: "Pick1",
+      link: "assets/images/assets/photo1.jpg",
     },
-    {
-      id: 2,
-      alt: "image_2",
-      title: "default",
-      link: "assets/images/bg.png",
-    },
+
     {
       id: 2,
       alt: "image_3",
       title: "home",
-      link: "assets/images/home-img.png",
+      link: "assets/images/assets/photo3.jpg",
+    },
+    {
+      id: 3,
+      alt: "image_4",
+      title: "end",
+      link: "assets/images/assets/photo4.jpg",
     },
   ];
 
@@ -120,7 +121,6 @@ export class Index6Component implements OnInit {
    * @param sectionId specify the current sectionID
    */
   onSectionChange(sectionId: string) {
-    console.log(sectionId);
     this.currentSection = sectionId;
   }
 

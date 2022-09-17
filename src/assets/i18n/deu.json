@@ -9,52 +9,66 @@
     "contact_us": "Contactez-nous"
   },
   "HOME": {
+    "title": "Willkommen",
+    "start": "Erkunden",
+    "subtitle": "Was ist ein Arzt? Krankenschwester oder Krankenpfleger? Bachelor oder Bakkalaureus auf der Suche nach Chancen und Möglichkeiten?",
+    "description": "Sie träumen von einem erfüllten Berufsleben?<br/> Träumen Sie von einem sicheren, gut bezahlten Job, in dem Sie respektiert werden?<br/> Sie träumen von einer seriösen Berufsausbildung mit einem angenehmen Gehalt?<br/> Arbeiten Sie in Deutschland! Das Land von Goethe erwartet Sie mit offenen Armen.<br/> Vertrauen Sie uns, wir helfen Ihnen, Ihre Träume zu verwirklichen."
+  },
+  "VISION": {
     "title": "Unsere Vision",
-    "subtitle": "Menschen, Welten und Kompetenzen für eine gegenseitige Bereicherung miteinander verbinden!",
-    "description": "In Deutschland und Europa gibt es einen großen Bedarf an Fachkräften, insbesondere in der Gesundheitsbranche. In anderen Teilen der Welt gibt es sehr viele sehr gut ausgebildete Fachkräfte. Diese haben entweder keine Arbeit oder wünschen sich bessere Arbeitsbedingungen. Deutschland und Europa ieten gute Arbeitsbedingungen. Unser Anliegen: Eine Brücke bauen, damit Fachkräfte nach Deutschland bzw. Europa kommen. Eine Win-win-Situation für alle Beteiligten!"
+    "subtitle": "Wie wir die Dinge sehen",
+    "description": "In Europa im Allgemeinen und in Deutschland im Besonderen besteht ein großer Bedarf an Arbeitskräften in verschiedenen Bereichen der Wirtschaft, unter anderem in der Medizin. In anderen Teilen der Welt, insbesondere in Afrika, gibt es viele gut ausgebildete junge Menschen. Diese sind arbeitslos oder haben den Wunsch, unter besseren Bedingungen zu arbeiten. Unser Ziel ist es, eine Verbindung zwischen jungen Afrikanern und deutschen Unternehmen zu ermöglichen."
   },
   "ABOUT": {
-    "title": "A propos de nous"
+    "title": "Wer sind wir? ",
+    "description": "Nous sommes une jeune entreprise dont le but est d’une part d’aider des jeunes personnes à mettre leur savoir-faire en valeur en Europe. Andererseits wollen wir Unternehmen in Deutschland dabei unterstützen und begleiten, neue, zuverlässige und kompetente Mitarbeiter zu finden, um ihre Ziele erreichen zu können. Wir sind in Deutschland ansässig und haben Partner in verschiedenen Ländern."
+  },
+
+  "PROCEDURE": {
+    "title": "Unser Verfahren",
+    "subtitle": "Wie wir vorangehen",
+    "step": "Um förderfähig zu sein, müssen Sie die unten aufgeführten Bedingungen erfüllen:",
+    "step1": "Setzen Sie sich umgehend mit uns in Verbindung. Wir werden Ihnen unsere Erfahrung und unsere Netzwerke zur Verfügung stellen. Wir werden von Fall zu Fall beurteilen, welches Verfahren für Sie am besten geeignet ist.",
+    "step2": "Legen Sie einen Nachweis über Ihre Ausbildung und, wenn möglich, über Ihre Berufserfahrung vor.",
+    "step3": "Melden Sie sich für einen Sprachkurs an (falls Sie das noch nicht getan haben). Das erforderliche Sprachniveau für den Kurs ist B2. Für diejenigen, die direkt arbeiten wollen, mindestens B2, idealerweise mehr.",
+    "step4": "Lassen Sie Ihre Zeugnisse und andere Dokumente von einem vereidigten Übersetzer ins Deutsche übersetzen. Bei Bedarf sollten Sie diese zusätzlich von der deutschen Botschaft beglaubigen lassen.",
+    "step5": "Wir helfen Ihnen bei der Zusammenstellung Ihrer Unterlagen im Falle eines konkreten Angebots."
+  },
+  "BUT": {
+    "title": "Unser Ziel",
+    "subtitle": "Warum wir das tun ?",
+    "description": "Erleichterung einer Verbindung zwischen jungen Afrikanern und deutschen Unternehmen."
   },
   "SERVICES": {
-    "title": "Nos services",
-    "recherche": "recherche",
-    "rechercheText": "Nous recherchons des professionnels en Afrique pour le secteur de la santé, p. ex. des infirmiers, physiothérapeutes, apprentis et médecins et les placent en Allemagne et en Europe.",
-    "apprentissage": "apprentissage",
-    "apprentissageText": "Nous recherchons des professionnels en Afrique pour le secteur de la santé, p. ex. des infirmiers, physiothérapeutes, apprentis et médecins et les placent en Allemagne et en Europe.",
-    "recrutement": "recrutement",
-    "recrutementText": "Nous recherchons des professionnels en Afrique pour le secteur de la santé, p. ex. des infirmiers, physiothérapeutes, apprentis et médecins et les placent en Allemagne et en Europe.",
-    "viewMore": "Voir plus",
-    "viewMin": "Voir moins"
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Was wir tun",
+    "recherche": "suche",
+    "rechercheText": "Wir suchen in Afrika Fachkräfte für den Gesundheitssektor, z.B. Krankenpfleger,Physiotherapeuten, Auszubildende und Ärzte und vermitteln sie nach Deutschland und Europa.",
+    "selection": "Auswahl",
+    "selectionText": "Nach Eingang der Bewerbungen wählen wir die vielversprechendsten Kandidaten aus und legen ihre Unterlagen den Unternehmen zur Prüfung vor.",
+    "accompagnement": "rekrutierung",
+    "accompagnementText": "Wir verfolgen den Fortschritt Ihres Antrags und halten Sie in Echtzeit auf dem Laufenden. Wir begleiten Sie während des gesamten Verfahrens (vom Antrag bis zur Ankunft in Deutschland).",
+    "viewMore": "Mehr sehen",
+    "viewMin": "Siehe weniger"
   },
-  "CLIENT": {
-    "clientSays": "Ce que disent nos clients",
-    "testimonial": "Témoignage",
-    "clientSatisfied": "Clients Satisfaits",
-    "userDash": "Utilisateur MyDash",
-    "featured": "Marques vedettes"
+  "CONTACT": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Wenn Sie sind :",
+    "role1": "Arzt",
+    "role2": "Krankenpfleger",
+    "role4": "Ingenieur",
+    "role5": "Oder Sie möchten eine Ausbildung zum Krankenpfleger absolvieren (mindestens Abiturniveau und mindestens Sprachniveau B2).",
+    "formulaire": "Kontaktformular",
+    "nom": "Ihr Name",
+    "email": "Ihre Email",
+    "message": "Ihre Nachricht",
+    "envoyer": "Senden",
+    "appelle": "Kontakt",
+    "adresse": "Lokalisierung",
+    "boiteMail": "E-Mail"
   },
   "FOOTER": {
-    "about": "A propos",
-    "company": "Companie",
-    "aboutUs": "A propos de nous",
-    "moreInfo": "Plus d'info",
-    "ourApps": "Nos applications"
-  },
-  "PLAN": {
-    "subscribe": "Télécharger",
-    "getBetter": "Obtenir l'application My Dashes sur :",
-    "seeMillions": "Découvrez pourquoi des millions de personnes dans 195 pays",
-    "try": "Essayer",
-    "appChoice": "OU"
-  },
-  "FEATURE": {
-    "feature": "Produits",
-    "featureProduct": "Produits récemment mis en avant"
-  },
-  "PARTNER": {
-    "ourPartner": "Nos partenaires",
-    "trustedUs": "Ceux qui nous ont fait confiance"
+    "mention": "rechtliche Hinweise"
   },
   "LANG": {
     "fr": "FR",

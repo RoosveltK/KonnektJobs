@@ -65,6 +65,10 @@ import { PlansComponent } from "./plans/plans.component";
 import { FooterComponent } from "./footer/footer.component";
 import { PartnerComponent } from "./partner/partner.component";
 import { AboutComponent } from "./about/about.component";
+import { OurVisionComponent } from "./our-vision/our-vision.component";
+import { OurProcedureComponent } from "./our-procedure/our-procedure.component";
+import { ContactUsComponent } from "./contact-us/contact-us.component";
+import { ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -76,6 +80,9 @@ import { AboutComponent } from "./about/about.component";
     ScrollspyDirective,
     PartnerComponent,
     AboutComponent,
+    OurVisionComponent,
+    OurProcedureComponent,
+    ContactUsComponent,
   ],
   imports: [
     CommonModule,
@@ -83,6 +90,7 @@ import { AboutComponent } from "./about/about.component";
     CarouselModule,
     CountToModule,
     TranslateModule,
+    ReactiveFormsModule,
   ],
   exports: [
     ServicesComponent,
@@ -95,6 +103,9 @@ import { AboutComponent } from "./about/about.component";
     TranslateModule,
     PartnerComponent,
     AboutComponent,
+    OurVisionComponent,
+    OurProcedureComponent,
+    ContactUsComponent,
   ],
 })
 export class SharedModule {}

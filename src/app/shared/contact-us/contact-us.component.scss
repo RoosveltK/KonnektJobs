@@ -1,0 +1,32 @@
+.title-section {
+  background: #1b5996;
+  border-radius: 0px 45px 45px 0;
+  padding: 10px;
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 45px;
+}
+
+.btn-custom {
+  font-size: 0.9rem;
+  padding: 0.7rem 1.4rem;
+  font-weight: 500;
+  transition: all 0.4s;
+  border-radius: 7px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+
+  .btn:hover {
+    transform: translateY(-4px);
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+.icon {
+  border: 1px solid #1b5996;
+  border-radius: 50%;
+  padding: 10px;
+}

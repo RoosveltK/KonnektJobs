@@ -1,0 +1,128 @@
+<section class="section" id="contact">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="hero-wrapper mb-4">
+          <h1 class="hero-title mb-4 mt-2 title-section">
+            <span class="text-white">{{ "CONTACT.title" | translate }}</span>
+          </h1>
+
+          <div class="text-black-50">
+            <span class="text-success" style="font-size: 25px">{{
+              "CONTACT.subtitle" | translate
+            }}</span>
+            <ul>
+              <li>{{ "CONTACT.role1" | translate }}</li>
+              <li>{{ "CONTACT.role2" | translate }}</li>
+              <li>{{ "CONTACT.role4" | translate }}</li>
+              <li>{{ "CONTACT.role5" | translate }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="col-lg-4 offset-lg-2">
+        <div class="card mx-auto p-4 rounded mt-5 mt-lg-0 shadow">
+          <div class="text-center">
+            <p class="text-muted mb-2 font-13 text-uppercase">
+              {{ "CONTACT.formulaire" | translate }}
+            </p>
+          </div>
+          <form class="registration-form" [formGroup]="form">
+            <div class="form-group mb-4">
+              <label class="font-15"
+                >{{ "CONTACT.nom" | translate }}
+                <span class="text-success">*</span>
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder=""
+                formControlName="name"
+              />
+            </div>
+            <div class="form-group mb-4">
+              <label class="font-15"
+                >{{ "CONTACT.email" | translate }}
+                <span class="text-success">*</span></label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder=""
+                formControlName="email"
+              />
+            </div>
+            <div class="form-group mb-3">
+              <label class="font-15"
+                >{{ "CONTACT.message" | translate }}
+                <span class="text-success">*</span></label
+              >
+              <textarea
+                class="form-control"
+                id="message"
+                rows="4"
+                placeholder=""
+                formControlName="message"
+              ></textarea>
+            </div>
+            <button
+              [disabled]="!form.valid"
+              type="button"
+              class="btn btn-block btn-sm btn-primary"
+              (click)="contactUs()"
+            >
+              {{ "CONTACT.envoyer" | translate }}
+              <i class="mdi mdi-telegram ml-2"></i>
+            </button>
+          </form>
+        </div>
+      </div> -->
+
+      <div class="col-lg-4 offset-lg-2">
+        <div class="hero-title mb-4 mt-2"></div>
+        <div>
+          <div class="media mb-4">
+            <div class="icon mx-2">
+              <i-feather name="phone" class="text-primary"></i-feather>
+            </div>
+            <div class="media-body text-black-50">
+              <span style="font-size: 18px" class="text-primary">{{
+                "CONTACT.appelle" | translate
+              }}</span>
+              <p>(0049)17684140032</p>
+            </div>
+          </div>
+
+          <div class="media mb-4">
+            <div class="icon mx-2">
+              <i-feather name="mail" class="text-primary"></i-feather>
+            </div>
+            <div class="media-body text-black-50">
+              <span style="font-size: 18px" class="text-primary">{{
+                "CONTACT.boiteMail" | translate
+              }}</span>
+              <p>info@konnektjobs.de</p>
+            </div>
+          </div>
+
+          <div class="media mb-4">
+            <div class="icon mx-2">
+              <i-feather name="map-pin" class="text-primary"></i-feather>
+            </div>
+            <div class="media-body text-black-50">
+              <span style="font-size: 18px" class="text-primary">{{
+                "CONTACT.adresse" | translate
+              }}</span>
+              <p>Krimpelweg 5, 28277 Bremen, Allemagne</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</section>

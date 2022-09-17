@@ -1,6 +1,7 @@
 import { Injectable } from "@angular/core";
 import { TranslateService } from "@ngx-translate/core";
 export const LANG_KEY = "LANG_KEY";
+
 @Injectable({
   providedIn: "root",
 })

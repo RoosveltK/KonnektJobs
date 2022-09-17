@@ -1,54 +1,66 @@
 <!-- Footer start -->
-<footer class="footer">
+<footer class="footer bg-success">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-sm-6">
         <div>
-          <h2 class="mb-4 footer-list-title">
-            {{ "FOOTER.about" | translate }}
+          <h2 class="mb-4 footer-list-title text-primary">
+            {{ "ABOUT.title" | translate | uppercase }}
           </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet
-            libero congue habitant
-          </p>
+          <p
+            class="text-black-50"
+            [innerHTML]="'ABOUT.description' | translate"
+          ></p>
         </div>
       </div>
 
-      <div class="col-lg-6 col-sm-6">
+      <!-- <div class="col-lg-3 col-sm-6">
         <div>
-          <h2 class="mb-4 footer-list-title">
-            {{ "MENU.contact_us" | translate | titlecase }}
+          <h2 class="mb-4 footer-list-title text-primary">
+            {{ "MENU.contact_us" | translate | uppercase }}
           </h2>
 
           <div>
             <div class="media">
               <i-feather
                 name="map-pin"
-                class="icon-dual-light icons-sm mt-1 mr-2"
+                class="icon-dual-light icons-sm mt-1 mr-2 text-primary"
               ></i-feather>
-              <div class="media-body">
-                <p>476 University Drive Ridge, IL 61257</p>
+              <div class="media-body text-black-50">
+                <p>Krimpelweg 5, 28277 Bremen, Allemagne</p>
               </div>
             </div>
             <div class="media">
               <i-feather
                 name="mail"
-                class="icon-dual-light icons-sm mt-1 mr-2"
+                class="icon-dual-light icons-sm mt-1 mr-2 text-primary"
               ></i-feather>
-              <div class="media-body">
-                <p>exampleabc@armyspy.com</p>
+              <div class="media-body text-black-50">
+                <p>info@konnektjobs.de</p>
               </div>
             </div>
             <div class="media">
               <i-feather
                 name="phone"
-                class="icon-dual-light icons-sm mt-1 mr-2"
+                class="icon-dual-light icons-sm mt-1 mr-2 text-primary"
               ></i-feather>
-              <div class="media-body">
-                <p>0123-456-789</p>
+              <div class="media-body text-black-50">
+                <p>(0049)17684140032</p>
               </div>
             </div>
           </div>
+        </div>
+      </div> -->
+
+      <div class="col-lg-6 col-sm-6">
+        <div>
+          <h2 class="mb-4 footer-list-title text-primary">
+            {{ "FOOTER.mention" | translate | uppercase }}
+          </h2>
+          <p class="text-black-50">
+            ANTOINE BOUE <br />
+            DIRECTEUR GÉNÉRAL
+          </p>
         </div>
       </div>
     </div>

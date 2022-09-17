@@ -6,13 +6,13 @@ const serviceData = [
   },
   {
     id: 2,
-    title: "SERVICES.apprentissage",
-    text: "SERVICES.apprentissageText",
+    title: "SERVICES.selection",
+    text: "SERVICES.selectionText",
   },
   {
     id: 3,
-    title: "SERVICES.recrutement",
-    text: "SERVICES.recrutementText",
+    title: "SERVICES.accompagnement",
+    text: "SERVICES.accompagnementText",
   },
   // {
   //   id: 4,
