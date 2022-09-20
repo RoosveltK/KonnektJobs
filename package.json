@@ -1,6 +1,9 @@
 {
-  "name": "invoza",
+  "name": "konnekt-jobs",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
