@@ -2,8 +2,7 @@
   "name": "konnekt-jobs",
   "version": "1.0.0",
   "engines": {
-    "node": "14.19.2",
-    "npm": "8.17.0"
+    "node": "14.19.2"
   },
   "scripts": {
     "ng": "ng",
