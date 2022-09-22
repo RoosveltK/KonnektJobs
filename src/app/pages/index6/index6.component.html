@@ -101,7 +101,12 @@
       <ng-template ngbSlide *ngFor="let slide of slidesStore">
         <div class="picsum-img-wrapper">
           <div class="img-review"></div>
-          <img [src]="slide.link" [alt]="slide.title" class="h-100 w-100" />
+          <img
+            [src]="slide.link"
+            [alt]="slide.title"
+            class="w-100"
+            style="min-height: 100vh"
+          />
         </div>
         <div class="carousel-caption">
           <div class="container">
