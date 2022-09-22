@@ -1,0 +1,76 @@
+{
+  "MENU": {
+    "home": "Acceuil",
+    "features": "Produits",
+    "langEn": "Anglais",
+    "langFr": "Français",
+    "partnerM": "Partenaires",
+    "about": "A propos",
+    "contact_us": "Contactez-nous"
+  },
+  "HOME": {
+    "title": "Bienvenue",
+    "start": "Explorer",
+    "subtitle": "Médecin? Infirmier? Bachelier ou licencié en quête d’opportunités et d’ouvertures ?",
+    "description": "Vous rêvez d’une vie professionnelle accomplie?<br/> Vous rêvez d’un travail stable, bien rémunéré et oú vous êtes respectés?<br/> Vous rêvez d’une formation professionnelle sérieuse avec un salaire confortable?<br/> Venez travailler en Allemagne! Le pays de Goethe vous attend à bras ouvert.<br/> Faites-nous confiance, nous vous aidons à réaliser vos rêves."
+  },
+  "VISION": {
+    "title": "Notre vision",
+    "subtitle": "Comment nous voyons les choses",
+    "description": "L’Europe en général et l’Allemagne en particulier, est dans un grand besoin en main d’œuvre dans différents domaines de l’économie, dont la médecine. Ailleurs dans le monde, notamment en Afrique, il y a beaucoup de jeunes gens bien formés. Ceux-ci sont sans travail ou désirent travailler dans des meilleures conditions. Notre objectif est de faciliter une connexion entre les jeunes Africains et les entreprises allemandes. "
+  },
+  "ABOUT": {
+    "title": "Qui sommes-nous? ",
+    "description": "Nous sommes une jeune entreprise dont le but est d’une part d’aider des jeunes personnes à mettre leur savoir-faire en valeur en Europe. D’autre part, nous entendons soutenir et accompagner les entreprises en Allemagne à trouver de nouveaux employés fiables et compétents pour pouvoir atteindre leurs objectifs.Nous sommes basés en Allemagne, avec des partenaires dans différents pays."
+  },
+  "PROCEDURE": {
+    "title": "Notre procédure",
+    "subtitle": "Comment nous precédons",
+    "step": "Pour être éligible, vous devez remplir les conditions ci-dessous:",
+    "step1": "Contactez-nous immédiatement. Nous mettrons notre expérience et nos réseaux à votre service. Nous jugerons cas par cas de la procédure la plus appropriée pour vous.",
+    "step2": "Fournissez une preuve de votre formation et, si possible, de votre expérience professionnelle.",
+    "step3": "Inscrivez-vous a un cours de langue (si ce n’est pas encore le cas). Le niveau requis pour la formation est le B2. Pour ceux qui veulent directement travailler, au moins B2, idéalement plus.",
+    "step4": "Faites traduire vos diplômes et autres documents par un traducteur assermente en allemand. En cas de besoin, vous devriez les faire certifier en plus par l’ambassade de l’Allemagne.",
+    "step5": "Nous vous aiderons a constituer votre dossier en cas d’une offre concrète."
+  },
+  "BUT": {
+    "title": "Notre Objectif",
+    "subtitle": "Pourquoi nous faisons cela ?",
+    "description": "Faciliter une connexion entre les jeunes Africains et les entreprises allemandes."
+  },
+  "SERVICES": {
+    "title": "Nos services",
+    "subtitle": "Ce que nous faisons",
+    "recherche": "recherche",
+    "rechercheText": "Nous recherchons des professionnels en Afrique pour le secteur de la santé, p. ex. des infirmiers, physiothérapeutes, apprentis et médecins et les placent en Allemagne et en Europe.",
+    "selection": "sélection",
+    "selectionText": "Apres réception des dossiers, nous sélectionnons les candidats les plus prometteurs et soumettons leurs dossiers à l’appréciation des entreprises",
+    "accompagnement": "accompagnement",
+    "accompagnementText": "Nous suivons l’évolution de votre dossier et vous en informons en temps réel. Nous vous accompagnons durant toute la procédure (depuis la demande jusqu’á l’arrivée en Allemagne)",
+    "viewMore": "Voir plus",
+    "viewMin": "Voir moins"
+  },
+  "CONTACT": {
+    "title": "Contactez-nous",
+    "subtitle": "Si vous etes :",
+    "role1": "Médecin",
+    "role2": "Infirmier",
+    "role4": "Ingénieur",
+    "role5": "Ou vous désirez suivre une formation d’infirmier (Niveau Bacc minimum et Niveau de langue B2 minimum)",
+    "formulaire": "Formulaire de contact",
+    "nom": "Votre Nom",
+    "email": "Votre Email",
+    "message": "Votre message",
+    "envoyer": "Envoyer",
+    "appelle": "Contact",
+    "adresse": "Localisation",
+    "boiteMail": "Email"
+  },
+  "FOOTER": {
+    "mention": "mentions légal"
+  },
+  "LANG": {
+    "fr": "FR",
+    "deu": "ALL"
+  }
+}
