@@ -21,12 +21,6 @@ const routes: Routes = [
   // { path: "index-3", component: Index3Component },
   // { path: "index-4", component: Index4Component },
   // { path: "index-5", component: Index5Component },
-
-  {
-    path: "**",
-    redirectTo: "",
-    pathMatch: "full",
-  },
 ];
 
 @NgModule({
