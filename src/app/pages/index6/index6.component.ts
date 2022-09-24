@@ -34,7 +34,7 @@ import { DashLangService } from "src/app/services/dash-lang.service";
 export class Index6Component implements OnInit {
   currentSection = "home";
   languages = [];
-  fullNameLang;
+  fullNameLang = null;
   selected = "";
 
   customOptions: OwlOptions = {
@@ -123,7 +123,7 @@ export class Index6Component implements OnInit {
   onSectionChange(sectionId: string) {
     this.currentSection = sectionId;
   }
-
+  fullNameLang;
   /**
    * Toggle navbar
    */

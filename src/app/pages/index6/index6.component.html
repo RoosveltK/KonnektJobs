@@ -1,101 +1,109 @@
-<!--Navbar Start-->
-<nav
-  class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark navbar-light"
-  (window:scroll)="windowScroll()"
-  id="navbar"
->
-  <div class="container">
-    <!-- LOGO -->
-    <a class="logo text-uppercase" href="/">
-      <img src="assets/img/logo.png" class="logo-light" alt="" height="50" />
-      <img src="assets/img/logo.png" alt="" class="logo-dark" height="50" />
-    </a>
+<ng-container *ngIf="fullNameLang == null"> please wait... </ng-container>
+<ng-container *ngIf="fullNameLang != null">
+  <!--Navbar Start-->
+  <nav
+    class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark navbar-light"
+    (window:scroll)="windowScroll()"
+    id="navbar"
+  >
+    <div class="container">
+      <!-- LOGO -->
+      <a class="logo text-uppercase" href="/">
+        <img src="assets/img/logo.png" class="logo-light" alt="" height="50" />
+        <img src="assets/img/logo.png" alt="" class="logo-dark" height="50" />
+      </a>
 
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarCollapse"
-      aria-controls="navbarCollapse"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-      (click)="toggleMenu()"
-    >
-      <i class="mdi mdi-menu"></i>
-    </button>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        (click)="toggleMenu()"
+      >
+        <i class="mdi mdi-menu"></i>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
-        <li class="nav-item" [ngClass]="{ active: currentSection === 'home' }">
-          <a
-            [ngxScrollTo]="'#home'"
-            href="javascript: void(0);"
-            class="nav-link"
-            >{{ "MENU.home" | translate }}</a
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+          <li
+            class="nav-item"
+            [ngClass]="{ active: currentSection === 'home' }"
           >
-        </li>
-        <li class="nav-item" [ngClass]="{ active: currentSection === 'about' }">
-          <a
-            [ngxScrollTo]="'#about'"
-            href="javascript: void(0);"
-            class="nav-link"
-            >{{ "MENU.about" | translate }}</a
-          >
-        </li>
-        <li
-          class="nav-item"
-          [ngClass]="{ active: currentSection === 'services' }"
-        >
-          <a
-            [ngxScrollTo]="'#services'"
-            href="javascript: void(0);"
-            class="nav-link"
-            >{{ "MENU.service" | translate }}</a
-          >
-        </li>
-        <li ngbDropdown style="cursor: pointer" class="nav-item">
-          <a
-            class="dropdown-language nav-link"
-            id="dropdownBasic1"
-            ngbDropdownToggle
-          >
-            {{ fullNameLang.text | translate | lowercase }}
-            <img [src]="fullNameLang.flag" class="flag" />
-          </a>
-          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button
-              *ngFor="let lang of languages"
-              (click)="changeLanguage(lang)"
-              ngbDropdownItem
+            <a
+              [ngxScrollTo]="'#home'"
+              href="javascript: void(0);"
+              class="nav-link"
+              >{{ "MENU.home" | translate }}</a
             >
-              <span>
-                {{ lang.text | translate | lowercase }} &nbsp;
-                <img [src]="lang.flag" class="flag" />
-              </span>
-            </button>
-          </div>
-        </li>
+          </li>
+          <li
+            class="nav-item"
+            [ngClass]="{ active: currentSection === 'about' }"
+          >
+            <a
+              [ngxScrollTo]="'#about'"
+              href="javascript: void(0);"
+              class="nav-link"
+              >{{ "MENU.about" | translate }}</a
+            >
+          </li>
+          <li
+            class="nav-item"
+            [ngClass]="{ active: currentSection === 'services' }"
+          >
+            <a
+              [ngxScrollTo]="'#services'"
+              href="javascript: void(0);"
+              class="nav-link"
+              >{{ "MENU.service" | translate }}</a
+            >
+          </li>
+          <li ngbDropdown style="cursor: pointer" class="nav-item">
+            <a
+              class="dropdown-language nav-link"
+              id="dropdownBasic1"
+              ngbDropdownToggle
+            >
+              {{ fullNameLang.text | translate | lowercase }}
+              <img [src]="fullNameLang.flag" class="flag" />
+            </a>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button
+                *ngFor="let lang of languages"
+                (click)="changeLanguage(lang)"
+                ngbDropdownItem
+              >
+                <span>
+                  {{ lang.text | translate | lowercase }} &nbsp;
+                  <img [src]="lang.flag" class="flag" />
+                </span>
+              </button>
+            </div>
+          </li>
 
-        <a
-          [ngxScrollTo]="'#contact'"
-          href="javascript: void(0);"
-          class="btn btn-primary btn-rounded btn-link"
-        >
-          {{ "MENU.contact_us" | translate }}
-        </a>
-      </ul>
+          <a
+            [ngxScrollTo]="'#contact'"
+            href="javascript: void(0);"
+            class="btn btn-primary btn-rounded btn-link"
+          >
+            {{ "MENU.contact_us" | translate }}
+          </a>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-<!-- Navbar End -->
-<div
-  appScrollspy
-  [spiedTags]="['SECTION']"
-  (sectionChange)="onSectionChange($event)"
->
-  <!-- Hero section Start -->
+  </nav>
+  <!-- Navbar End -->
+  <div
+    appScrollspy
+    [spiedTags]="['SECTION']"
+    (sectionChange)="onSectionChange($event)"
+  >
+    <!-- Hero section Start -->
 
-  <!-- <section id="home">
+    <!-- <section id="home">
     <ngb-carousel *ngIf="slidesStore" interval="5000">
       <ng-template ngbSlide *ngFor="let slide of slidesStore">
         <div class="picsum-img-wrapper">
@@ -140,7 +148,7 @@
     </ngb-carousel>
   </section> -->
 
-  <!-- <section class="hero-section-2 bg-primary" id="home">
+    <!-- <section class="hero-section-2 bg-primary" id="home">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
@@ -169,8 +177,8 @@
     </div>
   </section> -->
 
-  <!-- Hero section Start -->
-  <!-- <section class="hero-section" id="home">
+    <!-- Hero section Start -->
+    <!-- <section class="hero-section" id="home">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-6">
@@ -208,21 +216,26 @@
     </div>
   </section> -->
 
-  <section id="home">
-    <div class="picsum-img-wrapper">
-      <div class="img-review"></div>
-      <img src="assets/images/assets/photo4.jpg" alt="bg" class="h-100 w-100" />
-    </div>
-  </section>
+    <section id="home">
+      <div class="picsum-img-wrapper">
+        <div class="img-review"></div>
+        <img
+          src="assets/images/assets/photo4.jpg"
+          alt="bg"
+          class="h-100 w-100"
+        />
+      </div>
+    </section>
 
-  <!-- Hero section 
+    <!-- Hero section 
   <!-- Hero section End -->
-  <section id="about">
-    <app-our-vision></app-our-vision>
-    <app-our-procedure></app-our-procedure>
-  </section>
-  <app-plans></app-plans>
-  <app-services></app-services>
-  <app-contact-us></app-contact-us>
-  <app-footer></app-footer>
-</div>
+    <section id="about">
+      <app-our-vision></app-our-vision>
+      <app-our-procedure></app-our-procedure>
+    </section>
+    <app-plans></app-plans>
+    <app-services></app-services>
+    <app-contact-us></app-contact-us>
+    <app-footer></app-footer>
+  </div>
+</ng-container>
