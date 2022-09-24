@@ -59,7 +59,6 @@ const icons = {
 import { TranslateModule } from "@ngx-translate/core";
 
 import { ServicesComponent } from "./services/services.component";
-import { FeaturesComponent } from "./features/features.component";
 import { ClientsComponent } from "./clients/clients.component";
 import { PlansComponent } from "./plans/plans.component";
 import { FooterComponent } from "./footer/footer.component";
@@ -73,7 +72,6 @@ import { ReactiveFormsModule } from "@angular/forms";
 @NgModule({
   declarations: [
     ServicesComponent,
-    FeaturesComponent,
     ClientsComponent,
     PlansComponent,
     FooterComponent,
@@ -94,7 +92,6 @@ import { ReactiveFormsModule } from "@angular/forms";
   ],
   exports: [
     ServicesComponent,
-    FeaturesComponent,
     ClientsComponent,
     PlansComponent,
     FooterComponent,

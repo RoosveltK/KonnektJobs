@@ -1,4 +1,4 @@
-<ng-container *ngIf="fullNameLang == null"> please wait... </ng-container>
+<ng-container *ngIf="fullNameLang == null"> Please wait... </ng-container>
 <ng-container *ngIf="fullNameLang != null">
   <!--Navbar Start-->
   <nav
@@ -103,50 +103,49 @@
   >
     <!-- Hero section Start -->
 
-    <!-- <section id="home">
-    <ngb-carousel *ngIf="slidesStore" interval="5000">
-      <ng-template ngbSlide *ngFor="let slide of slidesStore">
-        <div class="picsum-img-wrapper">
-          <div class="img-review"></div>
-          <img
-            [src]="slide.link"
-            [alt]="slide.title"
-            class="w-100"
-            style="min-height: 100vh"
-          />
-        </div>
-        <div class="carousel-caption">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="hero-wrapper text-center mb-4">
-                  <h1 class="hero-title text-black mb-4">
-                    <span class="text-success">{{
-                      "HOME.title" | translate
-                    }}</span>
-                  </h1>
-                  <p class="font-16 text-white">
-                    {{ "HOME.subtitle" | translate }}
-                  </p>
+    <section id="home">
+      <ngb-carousel *ngIf="slidesStore" interval="5000">
+        <ng-template ngbSlide *ngFor="let slide of slidesStore">
+          <div class="picsum-img-wrapper">
+            <div class="img-review"></div>
+            <img
+              [src]="slide.link"
+              [alt]="slide.title"
+              class="w-100"
+              style="min-height: 100vh"
+            />
+          </div>
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="hero-wrapper text-center mb-4">
+                    <h1 class="hero-title text-black mb-4">
+                      <span class="text-success">{{
+                        "HOME.title" | translate
+                      }}</span>
+                    </h1>
+                    <p class="font-16 text-white">
+                      {{ "HOME.subtitle" | translate }}
+                    </p>
 
-
-                  <div class="watch-video pt-5">
-                    <a
-                      [ngxScrollTo]="'#about'"
-                      href="javascript: void(0);"
-                      class="btn btn-primary mt-2 mr-2 btn-rounded text-white"
-                    >
-                      {{ "HOME.start" | translate }}
-                    </a>
+                    <div class="watch-video pt-5">
+                      <a
+                        [ngxScrollTo]="'#about'"
+                        href="javascript: void(0);"
+                        class="btn btn-primary mt-2 mr-2 btn-rounded text-white"
+                      >
+                        {{ "HOME.start" | translate }}
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </ng-template>
-    </ngb-carousel>
-  </section> -->
+        </ng-template>
+      </ngb-carousel>
+    </section>
 
     <!-- <section class="hero-section-2 bg-primary" id="home">
     <div class="container">
@@ -216,7 +215,7 @@
     </div>
   </section> -->
 
-    <section id="home">
+    <!-- <section id="home">
       <div class="picsum-img-wrapper">
         <div class="img-review"></div>
         <img
@@ -225,7 +224,7 @@
           class="h-100 w-100"
         />
       </div>
-    </section>
+    </section> -->
 
     <!-- Hero section 
   <!-- Hero section End -->

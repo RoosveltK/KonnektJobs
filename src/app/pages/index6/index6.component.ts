@@ -91,8 +91,11 @@ export class Index6Component implements OnInit {
 
   ngOnInit(): void {
     this.languages = this.langService.getLanguages();
-    this.fullNameLang = this.langService.langSelected;
-    this.selected = this.fullNameLang.value;
+
+    if (this.langService.langSelected) {
+      this.fullNameLang = this.langService.langSelected;
+      this.selected = this.fullNameLang.value;
+    }
   }
 
   changeLanguage(elt) {
@@ -123,7 +126,6 @@ export class Index6Component implements OnInit {
   onSectionChange(sectionId: string) {
     this.currentSection = sectionId;
   }
-  fullNameLang;
   /**
    * Toggle navbar
    */
