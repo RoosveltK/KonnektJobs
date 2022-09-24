@@ -1,12 +1,11 @@
 {
   "MENU": {
-    "home": "Acceuil",
-    "features": "Produits",
+    "home": "Startseite",
     "langEn": "Anglais",
     "langFr": "Français",
-    "partnerM": "Partenaires",
-    "about": "A propos",
-    "contact_us": "Contactez-nous"
+    "about": "Über",
+    "service": "Dienste",
+    "contact_us": "Kontaktieren Sie uns"
   },
   "HOME": {
     "title": "Willkommen",

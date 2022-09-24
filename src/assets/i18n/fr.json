@@ -4,9 +4,9 @@
     "features": "Produits",
     "langEn": "Anglais",
     "langFr": "Français",
-    "partnerM": "Partenaires",
     "about": "A propos",
-    "contact_us": "Contactez-nous"
+    "contact_us": "Contactez-nous",
+    "service": "Services"
   },
   "HOME": {
     "title": "Bienvenue",
