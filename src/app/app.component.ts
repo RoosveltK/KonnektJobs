@@ -7,7 +7,7 @@ import { DashLangService } from "./services/dash-lang.service";
   styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
-  title = "MyDashs";
+  title = "KonnektJobs";
 
   constructor(languageService: DashLangService) {
     languageService.setInitialAppLanguage();
