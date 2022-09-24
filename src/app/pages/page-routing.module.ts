@@ -12,15 +12,15 @@ const routes: Routes = [
     path: "",
     component: Index6Component,
   },
-  // {
-  //   path: "index6",
-  //   component: Index6Component,
-  // },
-  // { path: "index-1", component: Index1Component },
-  // { path: "index-2", component: Index2Component },
-  // { path: "index-3", component: Index3Component },
-  // { path: "index-4", component: Index4Component },
-  // { path: "index-5", component: Index5Component },
+  {
+    path: "index6",
+    component: Index6Component,
+  },
+  { path: "index-1", component: Index1Component },
+  { path: "index-2", component: Index2Component },
+  { path: "index-3", component: Index3Component },
+  { path: "index-4", component: Index4Component },
+  { path: "index-5", component: Index5Component },
 ];
 
 @NgModule({

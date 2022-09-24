@@ -9,7 +9,6 @@
     <a class="logo text-uppercase" href="/">
       <img src="assets/img/logo.png" class="logo-light" alt="" height="50" />
       <img src="assets/img/logo.png" alt="" class="logo-dark" height="50" />
-      <span class="text-white p-2 app-title">KonnektJobs</span>
     </a>
 
     <button
@@ -96,7 +95,7 @@
 >
   <!-- Hero section Start -->
 
-  <section id="home">
+  <!-- <section id="home">
     <ngb-carousel *ngIf="slidesStore" interval="5000">
       <ng-template ngbSlide *ngFor="let slide of slidesStore">
         <div class="picsum-img-wrapper">
@@ -122,10 +121,6 @@
                     {{ "HOME.subtitle" | translate }}
                   </p>
 
-                  <!-- <p
-                    class="text-white text-center"
-                    [innerHTML]="'HOME.description' | translate"
-                  ></p> -->
 
                   <div class="watch-video pt-5">
                     <a
@@ -139,13 +134,88 @@
                 </div>
               </div>
             </div>
-            <!-- end row -->
           </div>
         </div>
       </ng-template>
     </ngb-carousel>
+  </section> -->
+
+  <!-- <section class="hero-section-2 bg-primary" id="home">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="hero-wrapper text-center mb-4">
+            <p class="font-16 text-white-50 text-uppercase"></p>
+            <h1 class="hero-title text-white mb-4">
+              <span class="text-success">{{ "HOME.title" | translate }}</span>
+            </h1>
+
+            <p class="text-white-50">
+              {{ "HOME.subtitle" | translate }}
+            </p>
+
+            <div class="watch-video pt-5">
+              <a
+                [ngxScrollTo]="'#about'"
+                href="javascript: void(0);"
+                class="btn btn-primary mt-2 mr-2 btn-rounded text-white"
+              >
+                {{ "HOME.start" | translate }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Hero section Start -->
+  <!-- <section class="hero-section" id="home">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="hero-wrapper mb-4">
+            <h1 class="hero-title mb-4">
+              <span class="text-primary">{{ "HOME.title" | translate }}</span>
+            </h1>
+
+            <p>
+              {{ "HOME.subtitle" | translate }}
+            </p>
+
+            <div class="mt-4">
+              <a
+                [ngxScrollTo]="'#about'"
+                href="javascript: void(0);"
+                class="btn btn-primary mt-2 mr-2 btn-rounded text-white"
+              >
+                {{ "HOME.start" | translate }}
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-sm-8">
+          <div class="home-img mt-5 mt-lg-0">
+            <img
+              src="assets/images/assets/photo4.jpg"
+              alt=""
+              class="img-fluid mx-auto d-block"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="home">
+    <div class="picsum-img-wrapper">
+      <div class="img-review"></div>
+      <img src="assets/images/assets/photo4.jpg" alt="bg" class="h-100 w-100" />
+    </div>
   </section>
 
+  <!-- Hero section 
   <!-- Hero section End -->
   <section id="about">
     <app-our-vision></app-our-vision>
