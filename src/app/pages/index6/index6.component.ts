@@ -44,8 +44,14 @@ export class Index6Component implements OnInit {
       0: {
         items: 1,
       },
-      576: {
+      400: {
         items: 2,
+      },
+      740: {
+        items: 3,
+      },
+      940: {
+        items: 4,
       },
     },
     nav: true,
@@ -67,20 +73,19 @@ export class Index6Component implements OnInit {
       id: 1,
       alt: "image_1",
       title: "Pick1",
-      link: "assets/images/assets/photo1.jpg",
-    },
-
-    {
-      id: 2,
-      alt: "image_3",
-      title: "home",
-      link: "assets/images/assets/photo3.jpg",
+      link: "assets/images/assets/bg1.jpg",
     },
     {
       id: 3,
+      alt: "image_3",
+      title: "end",
+      link: "assets/images/assets/bg3.jpg",
+    },
+    {
+      id: 4,
       alt: "image_4",
       title: "end",
-      link: "assets/images/assets/photo4.jpg",
+      link: "assets/images/assets/bg4.jpg",
     },
   ];
 
@@ -142,5 +147,14 @@ export class Index6Component implements OnInit {
       windowClass: "dark-modal",
       centered: true,
     });
+  }
+
+  setStyles(imgUrl: string) {
+    return {
+      "background-image": `url('${imgUrl}')`,
+      "background-position": "center",
+      "background-repeat": "no-repeat",
+      "background-size": "cover",
+    };
   }
 }

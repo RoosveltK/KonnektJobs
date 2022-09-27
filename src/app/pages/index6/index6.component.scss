@@ -21,6 +21,13 @@
   .app-title {
     color: rgba(52, 58, 64, 0.9) !important;
   }
+
+  .img-respo {
+    width: auto !important;
+  }
+  .bg-overlay {
+    background: rgba(35, 37, 47, 0.9) !important;
+  }
 }
 
 .dropdown-language {
@@ -35,9 +42,7 @@
   max-width: 30px;
 }
 
-.img-review {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
 }

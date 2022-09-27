@@ -64,7 +64,10 @@
     "envoyer": "Envoyer",
     "appelle": "Contact",
     "adresse": "Localisation",
-    "boiteMail": "Email"
+    "boiteMail": "Email",
+    "wait": "Merci de patienter...",
+    "success": "Votre message a été envoyé avec succès",
+    "error": "Une erreur s'est produite lors de l'envoi de votre message"
   },
   "FOOTER": {
     "mention": "mentions légal"

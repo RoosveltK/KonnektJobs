@@ -64,7 +64,10 @@
     "envoyer": "Senden",
     "appelle": "Kontakt",
     "adresse": "Lokalisierung",
-    "boiteMail": "E-Mail"
+    "boiteMail": "E-Mail",
+    "wait": "bitte warten...",
+    "success": "Ihre Nachricht wurde erfolgreich gesendet",
+    "error": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten"
   },
   "FOOTER": {
     "mention": "rechtliche Hinweise"
